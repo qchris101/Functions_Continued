@@ -8,6 +8,30 @@ const myMath = {
     }
 }
 
+// The "Longer way" to code a function inside a object.
+// const square = {               
+//     area : function(side){
+//         return (side * side)
+//     },
+    
+//     perimeter : function(side){
+//         return (side * 4)
+//     }
+// }
+
+// The shorthand way to create a function inside of an object.
+const square = {
+    area(side){
+        return (side * side)
+    },
+    
+    perimeter(side){
+        return (side * 4)
+    }
+}
+
+
+
 const cat = {
     name: 'Blue Steele',
     color: 'grey',

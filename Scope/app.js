@@ -38,16 +38,15 @@ birdWatch()
 // LEXICAL SCOPE
 // ==============
 
-function bankRobbery() {
-    const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Batwoman']
-    function cryForHelp() {
-        let color = 'purple';
-        function inner() {
-            for (let hero of heroes) {
-                console.log(`PLEASE HELP US, ${hero.toUpperCase()}`)
+function bankRobbery(){
+    const heros = ["Spiderman", "Thor", "Iron Man", "Groot"]
+    function cryForHelp(){
+        function inner(){
+            for (let hero of heros) {
+                console.log(`Please HELP us, ${hero.toUpperCase()}`)
             }
         }
-        inner();
+        inner()
     }
-    cryForHelp();
+    cryForHelp()
 }
